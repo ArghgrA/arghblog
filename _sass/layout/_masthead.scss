@@ -44,6 +44,14 @@
   }
 }
 
+div.masthead{
+  background: var(--global-div-bg-color);
+}
+
+nav#site-nav.greedy-nav{
+  background-color: var(--global-greedy-bg-color);
+}
+
 .masthead__menu {
 
   ul {
@@ -55,7 +63,7 @@
 }
 
 .masthead__menu-item {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-masthead-menu-bg-color);
   display: block;
   list-style-type: none;
   white-space: nowrap;

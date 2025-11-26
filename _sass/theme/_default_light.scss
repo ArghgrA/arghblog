@@ -30,18 +30,23 @@ $sidebar-screen-min-width   : 1024px;
 :root {
     --global-base-color                 : #{$gray};
     --global-bg-color                   : #fff;
-    --global-footer-bg-color            : #f2f3f3;
+    --global-footer-bg-color            : #EDEDED;
     --global-border-color               : #{$lighter-gray};
-    --global-dark-border-color          : #bdc1c4;
-    --global-code-background-color      : #fafafa;
+    --global-dark-border-color          : #000;
+    --global-code-background-color      : #fff;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #52adc8;
+    --global-link-color                 : #000;
     --global-link-color-hover           : mix(#000, #2f7f93, 25%);
     --global-link-color-visited         : mix(#fff, #2f7f93, 25%);  
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
     --global-text-color                 : #{$dark-gray};
-    --global-text-color-light           : #{$light-gray};
+    --global-text-color-light           : #494E52;
     --global-thead-color                : #{$lighter-gray};
+    --global-footer-text-color          : #000;
+    //if you wish to change the background bar edit these three rows
+    --global-div-bg-color               : linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 50%, #CCCCCC 100%);;
+    --global-greedy-bg-color            : linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 50%, #CCCCCC 100%);;
+    --global-masthead-menu-bg-color     : linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 50%, #CCCCCC 100%);;
 }
