@@ -21,6 +21,7 @@ Upon accessing [example.com](example.com), after creating an account and logging
 What immediately caught my attention was the **"My Data"** section, where a user can enter personal data, links to their social profiles, and even upload files.  
 In particular, the section that intrigued me the most was this one:
 
+![My Data](gatto.png)
 ![My Data](/research/firstBug/foto1.png)
 
 Here, the user can upload files that will later be displayed by clicking their corresponding blue buttons.
