@@ -31,7 +31,7 @@ This feature made me think right away about the possibility of bypassing file ex
 
 Once the uploaded file was viewed, this was the result:
 
-![XSS Triggered](/research/firstBug/xss.png)
+![XSS Triggered](https://i.ibb.co/kVr3xLgY/xss.webp)
 
 **Boom! Stored XSS executed!**
 
@@ -40,22 +40,22 @@ Once the uploaded file was viewed, this was the result:
 I didn’t stop there. I wanted to test whether it was possible to execute commands on the machine via a PHP file.  
 So I attempted to upload a `.php` file containing the following payload:
 
-![Payload RCE](/research/firstBug/rcepayload.png)
+![Payload RCE](https://i.ibb.co/HLV2sjL3/rcepayload.webp)
 
 Once the file was displayed, I noticed something strange:
 
-![File with .txt](/research/firstBug/rce.png)
+![File with .txt](https://i.ibb.co/8ghCsTmZ/rce.webp)
 
 The system automatically appended a `.txt` to the `.php` extension, preventing the execution of the code.
 
 After several tests on how to bypass the final `.txt`, it came to my mind that PHP files can also have other valid extensions (such as `.php2`, `.php3`, etc.).  
 So I tried sending the same payload with the `.php2` extension:
 
-![Payload PHP2](/research/firstBug/rce2payload.png)
+![Payload PHP2](https://i.ibb.co/1t0Qx47y/rce2payload.webp)
 
 Once the file was displayed, here was the result:
 
-![RCE Triggered](/research/firstBug/rce2.png)
+![RCE Triggered](https://i.ibb.co/gbd3kXjN/rce2.webp)
 
 **And there it is: PHP code executed successfully!**
 
