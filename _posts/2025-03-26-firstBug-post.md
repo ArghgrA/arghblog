@@ -27,7 +27,7 @@ Here, the user can upload files that will later be displayed by clicking their c
 
 This feature made me think right away about the possibility of bypassing file extension checks. So I began testing by uploading files with extensions different from the allowed ones. After several attempts, I submitted this payload:
 
-![Payload XSS](/research/firstBug/xsspayload.png)
+![Payload XSS](https://i.ibb.co/GvDg9xL8/xsspayload.webp)
 
 Once the uploaded file was viewed, this was the result:
 
