@@ -11,9 +11,6 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>My Research Articles</h2>
-<hr />
-
 {% assign research_pages = site.pages
    | where_exp: "p", "p.path contains '_pages/research/'"
    | sort: 'date'
