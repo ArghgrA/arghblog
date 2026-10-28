@@ -176,18 +176,7 @@ In a real environment, a PHP file uploaded with malicious content can lead to co
 
 Below is the video demonstration of the working PoC:
 
-<div style="position:relative; width:100%; max-width:640px; aspect-ratio:16/9; margin:20px 0;">
-  <iframe
-    src="https://streamable.com/e/nfxv74?muted=1"
-    title="Report video"
-    allow="fullscreen"
-    allowfullscreen
-    webkitallowfullscreen
-    mozallowfullscreen
-    loading="lazy"
-    style="position:absolute; inset:0; width:100%; height:100%; border:0;">
-  </iframe>
-</div>
+[▶ Click here to Watch the PoC video](https://streamable.com/nfxv74)
 
 ## Impact
 
