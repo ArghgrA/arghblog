@@ -52,7 +52,6 @@ To reproduce the vulnerability in a lab, the extension whitelist must be configu
 // Allowed file extensions for upload files
 // e.g. 'gif,png,jpg,html,txt'
 $allowed_upload_extensions = 'jpg,png,gif';
-defined('FM_UPLOAD_EXTENSION') || define('FM_UPLOAD_EXTENSION', $allowed_upload_extensions);
 ```
 
 ## Technical Analysis
