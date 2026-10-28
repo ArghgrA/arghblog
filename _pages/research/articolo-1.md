@@ -12,7 +12,7 @@ tags:
 
 ## Overview
 
-In this writeup I describe **CVE-2026-116044**, an **Unrestricted File Upload** vulnerability (CWE-434) affecting **TinyFileManager** up to and including version **2.6**.
+In this writeup I describe **CVE-2026-116044**, an **Unrestricted File Upload** vulnerability (CWE-434) that I've discovered in **TinyFileManager** up to and including version **2.6**.
 
 The flaw is located in the remote URL upload module of `tinyfilemanager.php`. Due to an error in the order of operations, extension validation is performed on a “dirty” filename that still includes the query string, while the file is later saved with a “clean” filename. This allows an attacker to bypass the extension whitelist and upload potentially dangerous files, with possible code execution on the server.
 
