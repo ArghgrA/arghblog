@@ -14,10 +14,19 @@ author_profile: true
 <h2>My Research Articles</h2>
 <hr />
 
-{% for post in site.pages %}
-  {% if post.path contains '_pages/research/' %}
-    {% include archive-single.html %}
+{% assign research_pages = site.pages
+   | where_exp: "p", "p.path contains '_pages/research/'"
+   | sort: 'date'
+   | reverse %}
+
+{% capture written_year %}'None'{% endcapture %}
+{% for post in research_pages %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
+  {% include archive-single.html %}
 {% endfor %}
 
 <!-- New style rendering if publication categories are defined -->
