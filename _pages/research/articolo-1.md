@@ -219,5 +219,5 @@ The vendor was contacted in advance but did not respond.
 ## References
 
 - [NVD – CVE-2026-116044](https://nvd.nist.gov/vuln/detail/cve-2026-116044)
-- [VulDB – CVE-2026-116044](https://vuldb.com/?id.CVE-2026-116044)
+- [VulDB – CVE-2026-116044](https://vuldb.com/it/cve/CVE-2026-116044)
 - [FixTheCVE – Mitigation Guide](https://fixthecve.com/cve/CVE-2026-116044)
