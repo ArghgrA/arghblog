@@ -1,6 +1,11 @@
 ---
-title: "La mia prima CVE"
+title: "My first CVE"
+date: 2026-10-24
 permalink: /research/first-cve/
-layout: single
-author_profile: true
+tags:
+  - cool posts
+  - category1
+  - category2
 ---
+
+# CVE-2026-116044 – Bypass della whitelist delle estensioni in TinyFileManager tramite Remote URL Upload
