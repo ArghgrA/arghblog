@@ -1,7 +1,7 @@
 ---
 title: "CVE-2026-116044"
 date: 2026-10-24
-permalink: /research/first-cve/
+permalink: /research/CVE-2026-116044/
 tags:
   - cool posts
   - category1
